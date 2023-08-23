@@ -17,7 +17,7 @@ import utils.ConfigLoader;
 public class LoginCucumberTest {
     Playwright playwright = Playwright.create();
     BrowserType chromium = playwright.chromium();
-    Browser browser = chromium.launch(new BrowserType.LaunchOptions().setHeadless(false));
+    Browser browser = chromium.launch(new BrowserType.LaunchOptions().setHeadless(true));
     Page page = browser.newPage();
 
     LoginPage loginPage = new LoginPage(page);
